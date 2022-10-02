@@ -7,6 +7,7 @@ rng(1)
 % generate system
 % system in z, should be strictly proper
 z = tf('z',0.1);     % sampling time 0.1
+% Gz = z/(1.1-z)/(1.1+z);
 Gz = z/(1.1-z)/(1.1+z)/(z+0.5);
 
 % transform to system in lambda
