@@ -1,4 +1,5 @@
 #Implementation of "Superstabilizing Control of Discrete-Time ARX Models under Error in Variables"
+Install YALMIP and MOSEK before running the code
 
 ## Comments
 in paper t = 1-na:T for y,     t = 1-nb:T-1 for u
