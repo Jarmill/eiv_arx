@@ -8,7 +8,7 @@ The design is in lambda = 1/z. Given system (Gz) in z, we first tranform it to s
 
 The lambda quantities are transformed into the z-domain to get Cz, ACL_z
 
-The coefficient order is low to high in paper (in lambda without constant term), while in MATLAB, it is high to low with constant term (in z). We performed flip, scaling and padding operations to perform the z-lambda transformations equalize them. 
+The coefficient order (na, nb) is low to high in paper (in lambda without constant term), while in MATLAB, it is high to low with constant term (in z). We performed flip, scaling and padding operations to perform the z-lambda transformations equalize them. 
 
 ## Routines
 Algorithm 1
