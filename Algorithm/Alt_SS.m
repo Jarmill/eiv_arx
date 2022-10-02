@@ -1,5 +1,5 @@
-function out = Dual_SS(sim, n, d, T)
-%% Dual method, Algorithm 3
+function out = Alt_SS(sim, n, d, T)
+%% Alternatives method, Algorithm 3
 %  sim:     sampled trajectories
 %    n:     size of coefficients
 %    d:     degree of the psatz
