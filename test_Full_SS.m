@@ -10,7 +10,7 @@ tic
 
 %% parameter
 eps = [0.0;0.0];            % noise bound    dy,du
-T = 4;                      % # of samples
+T = 3;                      % # of samples
 d = 2;                      % degree of psatz
 opts = sdpsettings('solver','mosek','verbose', 0);
 
