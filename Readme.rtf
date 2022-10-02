@@ -9,13 +9,13 @@ The design is in lambda = 1/z. Given system (Gz) in z, we first tranform it to s
 The coefficient order is low to high in paper (without constant term), while in MATLAB, it is high to low with constant term. We did some flip, scaling and padding to equalize them. 
 
 Algorithm 1
-test_Full_SS.m      			full method for superstability, only works for low order system due to high complexity
+test_Full_SS.m      			  full method for superstability, only works for low order system due to high complexity
 
 Algorithm 2&3
-test_Dual_SS.m   		           dual method for superstability, greatly reduce the complexity, works for higher order system
+test_Dual_SS.m   		        dual method for superstability, greatly reduce the complexity, works for higher order system
 
-test_mbc.m                                   compute the model-based result for comparison
-complexity.m                                 computes the size of psatz
+test_mbc.m                  compute the model-based result for comparison
+complexity.m                computes the size of psatz
 
 
 Contact Tianyu (dai.ti@northeastern.edu) for any questions regarding the code
