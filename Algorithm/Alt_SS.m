@@ -32,7 +32,7 @@ cons_data = struct('ineq', g, 'eq', h);    % constraints from data
 % define m, acl
 da = na_g+na_c; 
 db = nb_g+nb_c;
-for i = 1:da        % eq.(26c)
+for i = 1:da        % eq.(28c)
     m(i,1) = polynomial([ag;bg],2*d);
 end
 AA = compute_coeff([1;ag],[1;ac]);
@@ -44,7 +44,7 @@ if length(AA) > length(BB)
 end
 acl = AA + BB;
 
-% define non-negative polynomial eq.(26de)
+% define non-negative polynomial eq.(28de)
 gamma = sdpvar;
 p1 = m-acl;
 p2 = m+acl;
