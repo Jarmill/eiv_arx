@@ -33,7 +33,7 @@ Q = -vect_0'*Gram{1}*vect_0;
 p_psatz = p_psatz - Q;
 cons_psatz = (Gram{1} >= 0):'Gram_0';
 
-% generate zeta, psi eq.(25ab)
+% generate zeta, psi eq.(27ab)
 if mod(d_g,2) == 0                        % decide degree of poly
     [pow_i, ~] = momentPowers(0, n_var, floor((2*d-d_g)/2));
 else
@@ -70,7 +70,7 @@ for i = 1:su     % psi-
     cons_psatz = [cons_psatz; (Gram{i+1+2*sy+su} >= 0):'Gram_psi_n'];
 end
 
-% generate mu eq.(25c)
+% generate mu eq.(27c)
 [pow_mu, ~] = momentPowers(0, n_var, 2*d-d_h);
 vect_mu = recovermonoms(pow_mu, vars);
 l_mu = length(vect_mu);
@@ -80,7 +80,7 @@ for i = 1:T
     p_psatz = p_psatz + mu(i)*C.eq(i);
 end
 
-% eq.(25d-f)
+% eq.(27d-f)
 cons_psatz = [cons_psatz; (coefficients(p - p_psatz, vars) == 0):'eq'];
 cons_psatz = [cons_psatz; (coefficients(zeta_p - zeta_n - compute_corr(mu, [1;vars(1:na)]),vars) == 0):'eq_zeta'];
 cons_psatz = [cons_psatz; (coefficients(psi_p - psi_n - compute_corr(mu, vars(na+1:end)),vars) == 0):'eq_psi'];
